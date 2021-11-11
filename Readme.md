@@ -1,20 +1,20 @@
-# react-prime-motc-sider
+# react-prime-motc-crudtable
 
-Source code at https://github.com/carie8655/react-prime-motc-sider
+Source code at https://github.com/carie8655/react-prime-motc-crudtable
 
 ## Installation
 
-    npm install --save react-prime-motc-curdtable
+    npm install --save react-prime-motc-crudtable
 
 or
 
-    yarn add react-prime-motc-curdtable
+    yarn add react-prime-motc-crudtable
 
 ## Usage
 
 ```
 import React from 'react';
-import MOTCCRUDTable from 'react-prime-motc-curdtable';
+import MOTCCRUDTable from 'react-prime-motc-crudtable';
 
 function MOTCCRUDTableDemo(){
     return(

@@ -1,10 +1,10 @@
 {
-  "name": "react-prime-motc-curdtable",
-  "version": "0.0.3",
+  "name": "react-prime-motc-crudtable",
+  "version": "0.0.4",
   "main": "./lib/MOTCCRUDTable.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/carie8655/react-prime-motc-curdtable"
+    "url": "https://github.com/carie8655/react-prime-motc-crudtable"
   },
   "keywords": [
     "react",
@@ -16,7 +16,7 @@
   },
   "author": "Carie Yang",
   "bugs": {
-    "url": "https://github.com/carie8655/react-prime-motc-curdtable"
+    "url": "https://github.com/carie8655/react-prime-motc-crudtable"
   },
   "peerDependencies": {
     "prop-types": "^15.6.0",
