@@ -1,6 +1,6 @@
 {
   "name": "react-prime-motc-crudtable",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "./lib/MOTCCRUDTable.js",
   "repository": {
     "type": "git",
@@ -41,9 +41,9 @@
   "dependencies": {
     "file-loader": "^6.2.0",
     "lodash": "^4.17.21",
-    "primeflex": "^2.0.0",
-    "primeicons": "^4.1.0",
-    "primereact": "^6.5.1",
+    "primeflex": "2.0.0",
+    "primeicons": "4.1.0",
+    "primereact": "6.5.0",
     "react-transition-group": "^4.4.2",
     "url-loader": "^4.1.1"
   }
