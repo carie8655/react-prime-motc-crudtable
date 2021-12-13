@@ -1,6 +1,15 @@
 #crud-table .table-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+#crud-table .table-header button, #crud-table .table-header input {
+  line-height: 24px;
+}
+
+#crud-table .p-datatable-scrollable-header-box {
+  margin: 0px !important;
 }
 
 #crud-table .table-header .left-btn {

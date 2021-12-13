@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-fragments */
 import "primeflex/primeflex.css";
 import "primereact/resources/themes/nova/theme.css";
 import "primereact/resources/primereact.min.css";
@@ -14,7 +15,7 @@ import { Dialog } from "primereact/dialog";
 import { confirmDialog } from "primereact/confirmdialog";
 import { ColumnGroup } from "primereact/columngroup";
 import { Row } from "primereact/row";
-import "src/MOTCCRUDTable.css";
+import "./MOTCCRUDTable.css";
 
 class MOTCCRUDTable extends Component {
   DataTableRef = React.createRef();
@@ -168,6 +169,18 @@ class MOTCCRUDTable extends Component {
               />
             );
           })}
+          {!noAction && (
+            <Column
+              field="action"
+              header="操作"
+              rowSpan={2}
+              colSpan={1}
+              style={{
+                minWidth: actionWidth,
+                width: `${(actionWidth / colSum) * 100}%`,
+              }}
+            />
+          )}
         </Row>
         <Row>
           {_.chain(tableColumns)
@@ -219,7 +232,8 @@ class MOTCCRUDTable extends Component {
                   type="button"
                   label={`新增${title}`}
                   icon={`pi pi-plus`}
-                  className="p-button-sm p-mr-12"
+                  className="p-button-sm"
+                  style={{ marginRight: 12 }}
                   onClick={() =>
                     this.handleControlModal(
                       true,
@@ -242,7 +256,8 @@ class MOTCCRUDTable extends Component {
                         selectionOnly: false,
                       })
                     }
-                    className="p-button-success p-button-sm p-mr-2"
+                    className="p-button-success p-button-sm"
+                    style={{ marginRight: 12 }}
                     data-pr-tooltip="CSV"
                   />
                 </React.Fragment>
@@ -314,7 +329,8 @@ class MOTCCRUDTable extends Component {
                 {showEdit && (
                   <Button
                     icon="pi pi-pencil"
-                    className="p-button-warning p-mr-6"
+                    className="p-button-warning"
+                    style={{ marginRight: 6 }}
                     tooltip="編輯"
                     tooltipOptions={{ position: "top" }}
                     onClick={(e) => this.handleOnEdit(e, record)}
