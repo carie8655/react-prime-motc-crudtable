@@ -1,7 +1,7 @@
 {
   "name": "react-prime-motc-crudtable",
-  "version": "0.1.1",
-  "main": "./lib/MOTCCRUDTable.js",
+  "version": "0.1.2",
+  "main": "./lib/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/carie8655/react-prime-motc-crudtable"
