@@ -1,5 +1,6 @@
 /* eslint-disable react/jsx-fragments */
 import "primeflex/primeflex.css";
+import "primereact/resources/themes/nova/theme.css";
 import "primereact/resources/primereact.min.css";
 import "primeicons/primeicons.css";
 import React, { Component } from "react";
@@ -113,8 +114,11 @@ class MOTCCRUDTable extends Component {
     const minWidth = _.get(item, "width", columnWidth);
     const width = (_.get(item, "width", columnWidth) / colSum) * 100;
 
-    return { minWidth, width: width + "%" };
-    // return { flexGrow: 1, flexBasis: 150 + "px" };
+    const target = document.getElementById("crud-table");
+    const clientWidth = target.clientWidth;
+
+    if ((width * clientWidth) / 100 < 150) return { minWidth, width: minWidth };
+    else return { minWidth, width: width + "%" };
   };
 
   renderToolbar = () => {
